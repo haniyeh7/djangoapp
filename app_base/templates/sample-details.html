@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load thumbnail %}
+<div class="container">
+   <div class="section  sample-detail">
+      <!--   Icon Section   -->
+      <div class="row">
+         <!--start of course row-->
+         {%for otherSampleBot in other_sample %}
+         <div class="col s12 m4">
+            <div class="card">
+               <div class="card-image">
+                  {% thumbnail otherSampleBot.sample_image "250x240" crop="center" as im %}
+                  <img src="{{ im.url }}" class="responsive-img" width="{{ im.width }}" height="{{ im.height }}">
+                  {% endthumbnail %}
+               </div>
+               <div class="card-content sample">
+                  <p>{{otherSampleBot.description}}</p>
+               </div>
+               <div class="card-action">
+                  <a href="https://telegram.me/{{otherSampleBot.telegram_link}}" target="_blank">{{otherSampleBot.telegram_link}}</a>
+               </div>
+            </div>
+         </div>
+         {% endfor %}
+      </div>
+      <!--end of course row-->
+      <div class="warning">
+         <h4>قرار دادن ربات های شخصی در سایت به  عنوان  نمونه کار  امکان  پذیر نمی باشد.</h4>
+      </div>
+   </div>
+   <br><br>
+</div>
+{% endblock content %}

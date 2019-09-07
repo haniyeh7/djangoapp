@@ -1,0 +1,188 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+body,h1,h2,h3,h6,footer,p,nav,div,ul,li,span,a,i{
+	font-family:vazir-medium;
+	direction: rtl;
+}
+strong,b,h5,h4{
+    font-family: vazir-bold;
+    direction: rtl;
+}
+
+h1{
+	font-size: 36px;
+}
+h2{
+	font-size: 30px;
+}
+h3{
+	font-size: 24px;
+}
+h4{
+    line-height: 110%;
+    margin: 0.2rem 0 0 0;
+	font-size: 18px;
+}
+h5{
+	font-size: 14px;
+}
+h6{
+	font-size: 12px;
+}
+nav .brand-logo {
+    font-size: 1.9rem;
+}
+
+.orange-text {
+    color: #32afed !important;/*#e2705c*/
+}
+  
+
+.orange {
+    background-color:#32afed !important;/*#d85954*/
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+.brand-logo{
+	left: 0;
+}
+.sidenav-trigger{
+	float: right;
+}
+
+.grey-text.text-lighten-4{
+	font-size: 15px;
+}
+
+nav ul a{
+	font-size: 15px;
+}
+
+.orange-text.text-lighten-3{
+	color: #fff !important;
+    font-size: 18px;
+}
+
+ul {   
+    padding-inline-start:0;
+}
+
+.row .col.l3 {
+    width: 50%;
+ }
+
+ ul:not(.browser-default) {
+    font-size: 16px;
+}
+.card .card-image img {
+    height: 270px;
+}
+.card .card-action {
+    background-color:#32afed;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+    color: #fafafa;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.card .card-content p {
+    margin: 0;
+    font-weight: 550;
+    color: #32afed;
+ }
+
+.btn, .btn-large, .btn-small, .btn-flat {
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.more-course{
+	font-weight: 550;
+	font-size: 16px;
+}
+.more-course:after {
+	font-family: 'Material Icons';
+	content:'chevron_left';
+	font-size: 24px;
+	position: relative;
+	top:7px;
+}
+
+.card .card-content {
+    padding: 6px;
+}
+.card .card-action {
+    padding: 10px 10px;
+}
+
+@media only screen and (max-width: 1150px){
+	.card .card-content {
+		min-height: 150px;
+		font-size: 13px;
+   }
+}
+@media only screen and (max-width: 800px){
+	.card .card-content {
+		min-height: 180px;
+		font-size: 13px;
+   }
+}
+
+@media only screen and (max-width:640px){
+	.card .card-content {
+		min-height: 200px;
+		font-size: 13px;
+   }
+}
+@media only screen and (max-width:600px){
+	.card .card-content {
+		min-height: 80px;
+		font-size: 13px;
+   }
+}
+
+@media only screen and (max-width: 1352px){
+	.card .card-content.sample {
+		min-height: 150px;
+		font-size: 13px;
+   }
+}
+@media only screen and (max-width: 720px){
+	.card .card-content.sample {
+		min-height: 180px;
+		font-size: 13px;
+   }
+}
+@media only screen and (max-width: 662px){
+	.card .card-content.sample {
+		min-height: 200px;
+		font-size: 13px;
+   }
+}
+@media only screen and (max-width:600px){
+	.card .card-content.sample {
+		min-height:80px;
+		font-size: 13px;
+   }
+}
+.section.sample-detail{
+	padding-top: 5rem !important;
+}
+.warning{
+	margin: 0.2rem 0 0 0!important;
+	text-align: center;
+}
+.page-footer.blue {
+    padding-top:0;
+}

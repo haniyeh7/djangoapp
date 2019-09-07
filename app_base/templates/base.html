@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+      <title>HyperDesign</title>
+      <!-- CSS  Starter Template - Materialize-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="{% static 'css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <style type="text/css">
+         @font-face {
+         font-family: vazir-medium;
+         src: url({% static "font/Farsi-Digits/Vazir-Medium-FD.woff" %});
+         }
+         @font-face {
+         font-family: vazir-bold;
+         src: url({% static "font/Farsi-Digits/Vazir-Bold-FD.woff" %});
+         }
+         @font-face {
+         font-family: vazir-thin;
+         src: url({% static "font/Farsi-Digits/Vazir-Thin-FD.woff" %});
+         }
+      </style>
+      <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+   </head>
+   <body>
+      <nav class="light-blue lighten-1" role="navigation">
+         <div class="nav-wrapper container">
+            <a id="logo-container" class="brand-logo">HyperDesign</a>
+            <ul class="right hide-on-med-and-down">
+               <li><a class="white-text" href="{% url 'app-base:home' %}#samples">نمونه کار ها </a></li>
+               <li><a class="white-text" href="{% url 'app-base:home' %}#about">درباره ی ما </a></li>
+               <li><a class="white-text" href="{% url 'app-base:home' %}#download-button">ارتباط با  ما</a></li>
+               <li><a href="{% url 'app-base:home' %}">خانه</a></li>
+            </ul>
+            <ul id="nav-mobile" class="sidenav">
+               <li><a href="{% url 'app-base:home' %}">خانه</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+         </div>
+      </nav>
+      {% block content %}{% endblock content %}
+
+      <footer class="page-footer blue">
+         <div class="container">
+            <div class="row">
+               <div class="col l6 s12">
+                  <h5 class="white-text" id="about">درباره ی تیم ما</h5>
+                  <p class="grey-text text-lighten-4">ما یک تیم  هستیم که به صورت تمام وقت بر روی  طراحی و توسعه ی انواع ربات های تلگرامی کار میکنیم و هدف ما توسعه ی کسب و کار و سهولت تبلیغات کار شما در پیام رسان محبوب تلگرام  است.امیدواریم در آینده خدمات ارزنده ی بیشتری در این سایت  به شما عزیزان ارائه بدیم.میتوانید با ما در آیدی HyperDesign@از طریق تلگرام در ارتباط باشید. </p>
+               </div>
+               <div class="col l6 s12">
+                  <h5 class="white-text">محتوا</h5>
+                  <ul>
+                     <li><a class="white-text" href="{% url 'app-base:home' %}#download-button">ارتباط با  ما</a></li>
+                     <li><a class="white-text" href="{% url 'app-base:home' %}#about">درباره ی ما </a></li>
+                     <li><a class="white-text" href="{% url 'app-base:home' %}#samples">نمونه کار ها </a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="footer-copyright">
+            <div class="container">
+             توسعه داده شده  توسط <a class="orange-text text-lighten-3">HyperDesign</a>
+            </div>
+         </div>
+      </footer>
+      <!--  Scripts-->
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="{% static 'js/materialize.js' %}"></script>
+      <script src="{% static 'js/init.js' %}"></script>
+   </body>
+</html>

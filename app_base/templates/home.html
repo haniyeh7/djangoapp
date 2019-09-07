@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load thumbnail %}
+<div class="section no-pad-bot" id="index-banner">
+   <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Telegram Bot</h1>
+      <div class="row center">
+         <h4 class="header col s12 light">طراحی و توسعه ی انواع ربات های تلگرامی ساده و  پیشرفته به همراه  امکانات متنوع</h4>
+      </div>
+      <div class="row center">
+         <a href="http://telegram.me/HyperDesign" id="download-button" class="btn-large waves-effect waves-light orange" target="_blank">ارتباط مستقیم  با ما در تلگرام </a>
+      </div>
+      <br><br>
+   </div>
+</div>
+<div class="container">
+   <div class="section">
+      <!--   Icon Section   -->
+      <div class="row" id="samples">
+         <!--start of course row-->
+         {%for sampleBot in sampleBotes %}
+         <div class="col s12 m4">
+            <div class="card">
+               <div class="card-image">
+                  <!--<img src="{{sampleBot.sample_image.url}}">-->
+                  {% thumbnail sampleBot.sample_image "250x240" crop="center" as im %}
+                  <img src="{{ im.url }}" class="responsive-img" width="{{ im.width }}" height="{{ im.height }}">
+                  {% endthumbnail %}
+               </div>
+               <div class="card-content">
+                  <p>{{sampleBot.description}}</p>
+               </div>
+               <div class="card-action">
+                  <a href="https://telegram.me/{{sampleBot.telegram_link}}" target="_blank">{{sampleBot.telegram_link}}</a>
+               </div>
+            </div>
+         </div>
+         {% endfor %}
+         <a href="{% url 'app-base:sample' %}"><span  class="more-course">نمونه کارهای بیشتر</span></a>
+      </div>
+      <!--end of course row-->
+   </div>
+   <br><br>
+</div>
+{% endblock content %}
