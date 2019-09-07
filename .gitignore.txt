@@ -122,5 +122,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
 #SQLite dbfiles
 *.sqlite3
