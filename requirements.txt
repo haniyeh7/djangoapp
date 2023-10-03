@@ -1,6 +1,6 @@
 dj-database-url==0.5.0
 Django==2.2.5
-Pillow==6.1.0
+Pillow==10.0.1
 python-decouple==3.1
 sorl-thumbnail==12.5.0
 virtualenv==16.7.5
